@@ -53,8 +53,14 @@ slidenumbers: true
 
 ---
 
-- Using [Rome](https://github.com/blender/Rome)
+- Moving to Carthage and using [Rome](https://github.com/blender/Rome)
 - Biggest impact: 55 to 33 minutes
+
+---
+
+# [fit] What is Rome?
+
+^ Rome is a tool that uploads and downloads prebuilt binaries from Carthage to a variety of storage services. I use AWS S3 because it's popular and cost effective (less than 3,000 yen per month)
 
 ---
 
@@ -62,7 +68,7 @@ slidenumbers: true
 
 ---
 
-< Photo
+![80%](images/plans.png)
 
 ---
 
@@ -83,9 +89,7 @@ slidenumbers: true
 
 ---
 
-< Photo
-
-- https://twitter.com/i/web/status/1100404024224804871
+![100%](images/tweet.png)
 
 ---
 
@@ -103,6 +107,8 @@ COMPILER_INDEX_STORE_ENABLE=NO
 
 - Parallelization
 - Separate modules
+
+^ Parallelization: run static analysis at the same time as building + testing. Separate modules means better caching for incremental builds. xcode's build system has to be conservative for what really needs to be rebuilt to avoid dangerous mistakes
 
 ---
 
